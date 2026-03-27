@@ -17,13 +17,13 @@ const Testimonial = () => {
       <div className="mt-10 px-4 grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-6xl mx-auto">
 
         {/* Testimonial 1 */}
-        <div className="w-full bg-gray-100 rounded-2xl shadow-lg flex flex-col items-center p-6 transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+        <div className="w-full bg-gray-100 rounded-2xl shadow-lg flex flex-col items-center p-6 transform  duration-500 hover:-translate-y-3 hover:shadow-2xl">
           
           <div className="overflow-hidden rounded-full">
             <img 
               src="images/HomeImage/cloth.jpg" 
               alt="Customer Testimonial" 
-              className="rounded-full w-20 h-20 border-4 border-white mb-4 transition duration-500 hover:scale-110"
+              className="rounded-full w-20 h-20 border-4 border-white mb-4  duration-500 hover:scale-110"
             />
           </div>
 
@@ -52,13 +52,13 @@ const Testimonial = () => {
 
 
         {/* Testimonial 2 */}
-        <div className="w-full bg-gray-100 rounded-2xl shadow-lg flex flex-col items-center p-6 transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+        <div className="w-full bg-gray-100 rounded-2xl shadow-lg flex flex-col items-center p-6 transform duration-500 hover:-translate-y-3 hover:shadow-2xl">
           
           <div className="overflow-hidden rounded-full">
             <img 
               src="images/HomeImage/cloth2.webp" 
               alt="Customer Testimonial" 
-              className="rounded-full w-20 h-20 border-4 border-white mb-4 transition duration-500 hover:scale-110"
+              className="rounded-full w-20 h-20 border-4 border-white mb-4  duration-500 hover:scale-110"
             />
           </div>
 
@@ -70,7 +70,7 @@ const Testimonial = () => {
             ⭐⭐⭐⭐
           </p>
 
-          <p className='mt-4 text-center text-gray-600 leading-relaxed'>
+          <p className='mt-4 text-center text-gray-600 '>
             "The team helped me choose the right size and the product arrived earlier 
             than expected. The quality is top-notch for the price. Highly recommended!"
           </p>

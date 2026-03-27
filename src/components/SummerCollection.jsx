@@ -11,7 +11,7 @@ const SummerCollections = () => {
       <div className="flex items-center gap-4 mb-6">
         <button
           onClick={() => window.history.back()}
-          className="flex items-center text-gray-600 hover:text-gray-900 transition-colors"
+          className="flex items-center text-gray-600 hover:text-gray-900 "
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ const SummerCollections = () => {
                 loading="lazy"
               />
               <div className="p-4">
-                <h3 className="font-semibold text-gray-800 text-sm mb-1 line-clamp-2">
+                <h3 className="font-semibold text-gray-800 text-sm mb-1 ">
                   {product.name}
                 </h3>
                 <div className="flex items-center mb-2">

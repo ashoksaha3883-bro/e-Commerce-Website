@@ -56,7 +56,7 @@ export default function Footer() {
             <input
               type="email"
               placeholder="Email Address"
-              className="w-full sm:w-auto px-3 py-2 rounded-l-md focus:outline-none text-gray-900 mb-3 sm:mb-0"
+              className="w-full sm:w-auto px-3 py-2 rounded-l-md  text-gray-900 mb-3 sm:mb-0"
             />
             <button className="bg-blue-600 text-white px-4 py-2 rounded-r-md hover:bg-blue-700 w-full sm:w-auto">
               Join

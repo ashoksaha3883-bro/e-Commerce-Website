@@ -33,13 +33,13 @@ const Navbar = ({ isLoggedIn, userEmail, onLogout }) => {
           {isLoggedIn ? (
             <button
               onClick={handleLogoutClick}
-              className='text-black px-4 py-2 hover:bg-blue-500 hover:text-white rounded-md font-semibold bg-white transition-colors text-sm'
+              className='text-black px-4 py-2 hover:bg-blue-500 hover:text-white rounded-md font-semibold bg-white  text-sm'
             >
               Logout
             </button>
           ) : (
             <Link to="/login">
-              <button className='text-black px-4 py-2  hover:bg-blue-500 hover:text-white rounded-md font-semibold bg-white transition-colors text-sm '>
+              <button className='text-black px-4 py-2  hover:bg-blue-500 hover:text-white rounded-md font-semibold bg-white  text-sm '>
                 Login
               </button>
             </Link>
