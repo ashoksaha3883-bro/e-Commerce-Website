@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useCart } from '../context/CartContext'; // import the hook
+import { useCart } from '../context/CartContext';
 
 const Navbar = ({ isLoggedIn, userEmail, onLogout }) => {
   const navigate = useNavigate();
-  const { getCartCount } = useCart(); // get cart count
+  const { getCartCount } = useCart();
 
   const handleLogoutClick = () => {
     onLogout();
@@ -12,18 +12,22 @@ const Navbar = ({ isLoggedIn, userEmail, onLogout }) => {
   };
 
   return (
-    <nav className='bg-green-900 w-full text-white shadow-md'>
-      <div className='max-w-8xl mx-auto flex items-center justify-between p-2 ml-20 mr-20'>
+    <nav className="bg-green-900 w-full text-white shadow-md">
+      <div className="max-w-8xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-10 py-2">
+
         {/* Logo */}
-        <div className='flex items-center gap-2'>
-          <div className='text-xl font-bold tracking-tight flex items-center gap-1'>
-            <h2 className='bg-black rounded-full w-8 h-8 flex items-center justify-center'>N</h2>
+        <div className="flex items-center gap-2">
+          <div className="text-lg sm:text-xl font-bold tracking-tight flex items-center gap-1">
+            <h2 className="bg-black rounded-full w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center">
+              N
+            </h2>
             <span className="hidden sm:inline">extGen</span>
           </div>
         </div>
 
         {/* Right side */}
-        <div className='flex items-center gap-3  '>
+        <div className="flex items-center gap-2 sm:gap-3">
+
           {isLoggedIn && (
             <span className="hidden md:inline-block text-xs bg-white text-blue-600 rounded-3xl px-3 py-1 font-bold shadow-sm">
               User: {userEmail}
@@ -33,20 +37,20 @@ const Navbar = ({ isLoggedIn, userEmail, onLogout }) => {
           {isLoggedIn ? (
             <button
               onClick={handleLogoutClick}
-              className='text-black px-4 py-2 hover:bg-blue-500 hover:text-white rounded-md font-semibold bg-white  text-sm'
+              className="text-black px-3 sm:px-4 py-1.5 sm:py-2 hover:bg-blue-500 hover:text-white rounded-md font-semibold bg-white text-xs sm:text-sm"
             >
               Logout
             </button>
           ) : (
             <Link to="/login">
-              <button className='text-black px-4 py-2  hover:bg-blue-500 hover:text-white rounded-md font-semibold bg-white  text-sm '>
+              <button className="text-black px-3 sm:px-4 py-1.5 sm:py-2 hover:bg-blue-500 hover:text-white rounded-md font-semibold bg-white text-xs sm:text-sm">
                 Login
               </button>
             </Link>
           )}
 
           <Link to="/cart">
-            <button className='bg-white text-black px-4 py-2 rounded-md font-semibold hover:bg-blue-500 hover:text-white transition-all active:scale-95 text-sm relative'>
+            <button className="bg-white text-black px-3 sm:px-4 py-1.5 sm:py-2 rounded-md font-semibold hover:bg-blue-500 hover:text-white transition-all active:scale-95 text-xs sm:text-sm relative">
               Cart
               {getCartCount() > 0 && (
                 <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
@@ -55,6 +59,7 @@ const Navbar = ({ isLoggedIn, userEmail, onLogout }) => {
               )}
             </button>
           </Link>
+
         </div>
       </div>
     </nav>

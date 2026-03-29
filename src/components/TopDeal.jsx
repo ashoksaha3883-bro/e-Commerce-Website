@@ -10,7 +10,7 @@ const TopDeal = () => {
     <section className="py-8 px-4 max-w-8xl mx-auto">
       <h2 className="text-3xl font-bold text-gray-800 mb-6">🔥 Top Deals on Clothes</h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
         {dealProducts.map((product) => {
           const originalIndex = products.findIndex(p => p.id === product.id);
           return (

@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 
 const SecondHome = () => {
   return (
@@ -7,11 +7,11 @@ const SecondHome = () => {
       <div className="bg-stone-100">
         <hr className="my-2 text-blue-500" />
 
-        <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-8 md:gap-12 p-2 text-sm sm:text-base">
-          <h2>🔛 Days Easy</h2>
-          <h2>💷 Cash on Delivery</h2>
-          <h2>🗄️ Lowest Prices</h2>
-        </div>
+   <div className="flex justify-center items-center gap-3 sm:gap-6 md:gap-10 p-2 text-xs sm:text-sm md:text-base whitespace-nowrap">
+  <h2>🔛 Days Easy</h2>
+  <h2>💷 Cash on Delivery</h2>
+  <h2>🗄️ Lowest Prices</h2>
+</div>
 
         <hr className="my-2 text-blue-500" />
       </div>

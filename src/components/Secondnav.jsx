@@ -6,7 +6,7 @@ const Secondnav = () => {
   const [newdrop, setNewdrop] = useState(false);
 
   return (
-    <div className="max-w-8xl px-4 sm:px-10 lg:px-20 mx-auto flex items-center justify-between p-2 relative">
+    <div className="max-w-8xl sm:px-10 lg:px-8  flex items-center justify-between p-2 md:p-4 relative">
 
       <div className="flex items-center gap-2 sm:gap-4 relative">
 
@@ -64,35 +64,35 @@ const Secondnav = () => {
 
       </div>
 
-      <div>
-        <div className="items-center space-x-6 md:space-x-10 lg:space-x-16 mr-2 hidden sm:flex">
+    <div className="flex justify-center">
+  <div className="flex items-center gap-4 sm:gap-6 md:gap-10 lg:gap-16 mr-2 text-sm ">
 
-          <Link to="/men">
-            <button className="  hover:text-blue-600 font-semibold">
-              Men
-            </button>
-          </Link>
+    <Link to="/men">
+      <button className="hover:text-blue-600 font-semibold">
+        Men
+      </button>
+    </Link>
 
-          <Link to="/women">
-            <button className="  hover:text-blue-600 font-semibold">
-              Women
-            </button>
-          </Link>
+    <Link to="/women">
+      <button className="hover:text-blue-600 font-semibold">
+        Women
+      </button>
+    </Link>
 
-          <Link to="/kids">
-            <button className="  hover:text-blue-600 font-semibold">
-              Children
-            </button>
-          </Link>
+    <Link to="/kids">
+      <button className="hover:text-blue-600 font-semibold">
+        Children
+      </button>
+    </Link>
 
-          <Link to="/brand">
-            <button className="  hover:text-blue-600 font-semibold">
-              Brands
-            </button>
-          </Link>
+    <Link to="/brand">
+      <button className="hover:text-blue-600 font-semibold">
+        Brands
+      </button>
+    </Link>
 
-        </div>
-      </div>
+  </div>
+</div>
 
     </div>
   );
